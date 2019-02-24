@@ -1,2 +1,9 @@
-olá
-o lula é livre
+olï¿½
+o lula ï¿½ livre
+
+git remote add origin git@github.com:gabsferreira/postsdoblog.git
+git status
+git add Post.txt
+git commit -m "aqui coloco uma mensagem, tipo: comitando primeiro post"
+git pull --rebase origin master
+git push origin master
