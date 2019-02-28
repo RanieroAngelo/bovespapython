@@ -1,1 +1,18 @@
-piroca
+import os
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+os.chdir('C:/Users/vinir/Desktop/Estatística/Projeto_MercadoFinanceiro')
+dados = pd.read_csv('VVAR3.csv')
+print(dados.head(5))
+
+dados.Date = pd.to_datetime(dados.Date)
+dados.set_index('Date',inplace=True)
+
+dados[['Close']].plot(figsize=(10,10),linewidth=5,fontsize=20)
+plt.xlabel('Mês',fontsize=20)
+
+from pandas import series
+plot.acf
